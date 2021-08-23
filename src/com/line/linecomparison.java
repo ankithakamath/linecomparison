@@ -28,7 +28,15 @@ public class linecomparison {
 	
 		if (dis1.equals(dis2))
 		    System.out.println("equal lines");
-		else
-		    System.out.println("unequal lines");	
+		else {
+			int compare=dis1.compareTo(dis2);
+		if(compare > 0) {
+			System.out.println("line 1 is greater");
+		}
+		else if(compare < 0) {
+			System.out.println("line 2 is greater");
+		}
+		}
+	
 	}
 }
